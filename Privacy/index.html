@@ -33,9 +33,9 @@
             --bg-primary: #ffffff;
             --bg-secondary: #f8fafc;
             --bg-tertiary: #e2e8f0;
-            --text-primary: #1a202c;
-            --text-secondary: #2d3748;
-            --text-muted: #4a5568;
+            --text-primary: #000000;
+            --text-secondary: #1a1a1a;
+            --text-muted: #333333;
             --accent-primary: #2563eb;
             --accent-secondary: #7c3aed;
         }
@@ -66,9 +66,9 @@
 
         /* Light theme glass card */
         [data-bs-theme="light"] .glass-card {
-            background: rgba(255, 255, 255, 0.9);
-            border: 1px solid rgba(0, 0, 0, 0.1);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
         }
 
         .glass-card:hover {
@@ -144,7 +144,8 @@
 
         /* Light theme text improvements */
         [data-bs-theme="light"] .privacy-content p {
-            color: #2d3748;
+            color: #1a1a1a !important;
+            font-weight: 500;
         }
 
         .privacy-content ul {
@@ -159,11 +160,19 @@
 
         /* Light theme list improvements */
         [data-bs-theme="light"] .privacy-content ul li {
-            color: #2d3748;
+            color: #1a1a1a !important;
+            font-weight: 500;
         }
 
         .privacy-content strong {
             color: var(--text-primary);
+            font-weight: 700;
+        }
+
+        /* Light theme strong text */
+        [data-bs-theme="light"] .privacy-content strong {
+            color: #000000 !important;
+            font-weight: 700;
         }
 
         .theme-toggle {
@@ -204,6 +213,29 @@
 
         .footer-links a:hover {
             color: var(--accent-primary);
+        }
+
+        /* Light theme navbar improvements */
+        [data-bs-theme="light"] .navbar {
+            background: rgba(255, 255, 255, 0.95) !important;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        [data-bs-theme="light"] .navbar-brand {
+            color: #000000 !important;
+        }
+
+        [data-bs-theme="light"] .navbar-nav .nav-link {
+            color: #1a1a1a !important;
+        }
+
+        [data-bs-theme="light"] .navbar-nav .nav-link:hover {
+            color: #2563eb !important;
+        }
+
+        [data-bs-theme="light"] .navbar-nav .nav-link.active {
+            color: #2563eb !important;
+            font-weight: 600;
         }
 
         @media (max-width: 768px) {
@@ -257,8 +289,8 @@
             <div class="privacy-content">
                 <div class="glass-card" data-aos="fade-up" data-aos-delay="100">
                     <p class="text-muted text-center mb-4">
-                        <strong>Last Updated:</strong> January 2025<br>
-                        <strong>Effective Date:</strong> January 2025
+                        <strong>Last Updated:</strong> October 2025<br>
+                        <strong>Effective Date:</strong> October 2025
                     </p>
 
                     <h2 class="fw-bold">Introduction</h2>
