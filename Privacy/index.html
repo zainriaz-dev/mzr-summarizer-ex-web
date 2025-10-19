@@ -78,20 +78,12 @@
         }
 
         .gradient-text {
-            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            color: var(--accent-primary);
+            color: var(--text-primary);
         }
 
-        /* Light theme gradient text */
+        /* Light theme text */
         [data-bs-theme="light"] .gradient-text {
-            background: linear-gradient(135deg, #2563eb, #7c3aed);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            color: #2563eb;
+            color: #000000;
         }
 
         .navbar {
@@ -126,7 +118,7 @@
         }
 
         .privacy-content h2.fw-bold {
-            color: var(--accent-primary);
+            color: var(--text-primary);
             margin-top: 2rem;
             margin-bottom: 1rem;
             font-size: 1.5rem;
@@ -273,7 +265,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold gradient-text" href="../index.html">MZR Summarizer</a>
+            <a class="navbar-brand fw-bold" href="../index.html" style="color: var(--text-primary);">MZR Summarizer</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -302,7 +294,7 @@
     <!-- Privacy Policy Section -->
     <section class="privacy-section">
         <div class="container">
-            <h1 class="section-title gradient-text" data-aos="fade-up">Privacy Policy</h1>
+            <h1 class="section-title" data-aos="fade-up" style="color: var(--text-primary);">Privacy Policy</h1>
             
             <div class="privacy-content">
                 <div class="glass-card" data-aos="fade-up" data-aos-delay="100">
